@@ -45,11 +45,7 @@ gip(){
 }
 
 giP(){
-    if [ -e "$1" ]; then
-        git push origin $1
-    else
-        git push origin "$(git rev-parse --abbrev-ref HEAD)"
-    fi
+    git push origin ${1:-"$(git rev-parse --abbrev-ref HEAD)"}
 }
 
 # K8s
