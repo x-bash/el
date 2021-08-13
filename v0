@@ -26,9 +26,7 @@ gisy(){
         return 1
     fi
 
-    x push || {
-        giP
-    }
+    x push || giP
 }
 
 giam(){
