@@ -18,7 +18,7 @@ gia(){
 gisy(){
     giam "$@"
     git status -s
-    printf "Enter to continue. Other to abort." >&2
+    printf "\nEnter to continue. Other to abort: > " >&2
     local key
     read -r key
     if [ "$key" != "" ]; then
