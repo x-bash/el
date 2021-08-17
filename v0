@@ -48,6 +48,15 @@ giP(){
     git push origin ${1:-"$(git rev-parse --abbrev-ref HEAD)"}
 }
 
+ghclone(){
+    git clone "git@github.com:${1:?Provide url}.git"
+}
+
+gtclone(){
+    git clone "git@gitee.com:${1:?Provide url}.git"
+}
+
+
 # K8s
 
 alias kctl=kubectl
