@@ -21,6 +21,10 @@ giam(){
     git commit -m "$1"
 }
 
+gicm(){
+    git commit -m "${1:-...}"
+}
+
 gip(){
     git pull origin $(git branch | awk '$1=="*"{ print $2 }' )
 }
