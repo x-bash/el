@@ -30,7 +30,7 @@ gisy(){
 }
 
 giam(){
-    local msg="${1:-Provide message}"
+    local msg="${1:-...}"
     shift
     if [ $# -eq 0 ]; then
         git add .
@@ -38,6 +38,10 @@ giam(){
         git add "$@"
     fi
     git commit -m "$msg"
+}
+
+gicm(){
+    git commit -m "${1:-...}"
 }
 
 gip(){
