@@ -1,4 +1,4 @@
-# shellcheck shell=sh
+# shellcheck shell=sh disable=SC3043  # xrc
 
 # author:       Li Junhao           l@x-cmd.com    edwinjhlee.github.io
 # maintainer:   Li Junhao
@@ -9,9 +9,9 @@ alias gib="git branch"
 
 gia(){
     if [ "$1" = "" ]; then
-        git add .;
+        git add .
     else
-        git add "$@";
+        git add "$@"
     fi
 }
 
@@ -45,17 +45,29 @@ gicm(){
 }
 
 gip(){
-    git pull origin "$(git rev-parse --abbrev-ref HEAD)"
+    if [ -f "$(x wsroot)/.x-cmd/pull" ]; then
+        x pull
+    else
+        git pull origin "$(git rev-parse --abbrev-ref HEAD)"
+    fi
 }
 
+# shellcheck disable=SC2120
 giP(){
-    git push origin ${1:-"$(git rev-parse --abbrev-ref HEAD)"}
+    if [ -f "$(x wsroot)/.x-cmd/push" ]; then
+        x push
+    else
+        git push origin "${1:-"$(git rev-parse --abbrev-ref HEAD)"}"
+    fi
 }
 
+# TODO: x gh clone
 ghclone(){
     git clone "git@github.com:${1:?Provide url}.git"
 }
 
+# git clone gh://x-bash/x-cmd
+# TODO: x gt clone
 gtclone(){
     git clone "git@gitee.com:${1:?Provide url}.git"
 }
