@@ -90,7 +90,7 @@ rmrf(){
     done
 }
 
-# K8s
+# Section: k8s
 
 alias kctl=kubectl
 alias k=kctl
@@ -98,4 +98,8 @@ alias kg="kubectl get"
 alias kgp="kg pods"
 alias kgrs="kg rs"
 
-x theme use el
+# EndSection
+
+if [ -z "$X_DEFAULT_THEME" ]; then
+    x theme use "${X_DEFAULT_THEME:-el}"
+fi
