@@ -4,8 +4,18 @@
 # maintainer:   Li Junhao
 
 
-___x_cmd_el_xrc_lib(){ xrc "el/lib/${1:?Provide module}"; }
-x marg1 ___x_cmd_el_xrc_lib <<A
+# ___x_cmd_el_xrc_lib(){ xrc "el/lib/${1:?Provide module}"; }
+# x marg1 ___x_cmd_el_xrc_lib <<A
+# alpine
+# container
+# git
+# k8s
+# udpn
+# utils
+# wubi
+# A
+
+x marg1 - xrc el/lib/\$1 <<A
 alpine
 container
 git
