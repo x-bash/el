@@ -33,3 +33,14 @@ alias l='x ll'
 if [ -z "$___X_CMD_THEME_NAME" ]; then
     x theme try el
 fi
+
+if ! ( x boot mod ls | grep el >/dev/null); then
+    xrc ui
+    ui select answer "Not found in boot. import xrc module during boot?" "YES" "NO!"
+    if [ "$answer" = YES ]; then
+        x boot mod add el
+    fi
+fi
+
+x boot m
+
