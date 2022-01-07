@@ -24,11 +24,11 @@ cox(){
 }
 
 coxx(){
-    COX_TGT=x-cmd cox x-cmd
+    COX_TGT=x-cmd cox "$@"
 }
 
 coxb(){
-    COX_TGT=x-cmd cox x-bash
+    COX_TGT=x-bash cox "$@"
 }
 
 
