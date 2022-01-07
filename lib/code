@@ -1,6 +1,11 @@
 
 
 cox(){
+
+    if [ -z "$1" ]; then
+        code ~/$COX_TGT
+    fi
+
     local can
     can="$(
         cd ~/$COX_TGT
