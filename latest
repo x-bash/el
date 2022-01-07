@@ -27,6 +27,9 @@ A
 # wubi
 # A
 
+alias xdk=xdk  # xdk="x dk"
+alias l='x ll'
+
 if [ -z "$___X_CMD_THEME_NAME" ]; then
     x theme try el
 fi
