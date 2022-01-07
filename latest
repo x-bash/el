@@ -37,7 +37,7 @@ fi
 if ! ( x boot mod ls | grep el >/dev/null); then
     xrc ui
     if [ "$(
-        ui select answer "Not found in boot. import xrc module during boot?" "YES" "NO!"
+        ui select answer "Not found in boot. import this module during boot?" "YES" "NO!"
     )" = 1 ]; then
         x boot mod add el
     fi
