@@ -16,6 +16,8 @@ utils
 wubi
 A
 
+# x margs [ alpine code container git k8s updn utils wubi ] xrc el/lib/\$1
+
 # x marg1 - xrc el/lib/\$1 <<A
 # alpine
 # code
