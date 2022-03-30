@@ -3,21 +3,8 @@
 
 xrc:mod:lib alpine code container git k8s updn utils wubi
 
-# x margs [ alpine code container git k8s updn utils wubi ] xrc el/lib/\$1
-
-# x marg1 - xrc el/lib/\$1 <<A
-# alpine
-# code
-# container
-# git
-# k8s
-# udpn
-# utils
-# wubi
-# A
-
 + xdk
-alias xdk=xdk  # xdk="x dk"
+alias xdk=xdk   # xdk="x dk"
 alias l='x ll'
 
 if [ -z "$___X_CMD_THEME_NAME" ]; then
