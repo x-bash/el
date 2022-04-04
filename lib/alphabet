@@ -1,20 +1,20 @@
-alias a="___x_cmd_alias"    # alias with complete
+alias a="___x_cmd_alias"        # alias with complete
 alias b=""
 alias c="config"    #
 alias d=""
 alias e="ed"
 alias f="file"
-alias g="___x_cmd_git"       # grep
+alias g="___x_cmd_grep"          # rg   # git == git
 
 alias h="history"
 alias i="info"
-alias j="json"      # cd
-alias k="kubernete"
+alias j="json"                  # cd
+alias k="kubernete"             # sure
 alias l="___x_cmd_ls"
 alias m=""
 alias n=""
 
-alias o="___x_cmd_open"      # open if it is a folder. Provide short name
+alias o="___x_cmd_open"         # sure # open if it is a folder. Provide short name
 alias p=""
 alias q="query"     # sql
 alias r=""
@@ -25,7 +25,7 @@ alias u=""
 alias v=""
 alias w="who"
 
-alias x="___x_cmd_main"
+alias x="___x_cmd_main"     # sure
 alias y="yml"
 alias z=""
 
