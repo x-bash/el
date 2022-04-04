@@ -6,12 +6,12 @@ alias e="ed"
 alias f="file"
 alias g="___x_cmd_grep"          # rg   # git == git
 
-alias h="history"
+alias h="history"               # history
 alias i="info"
 alias j="json"                  # cd
 alias k="kubernete"             # sure
-alias l="___x_cmd_ls"
-alias m=""
+alias l="___x_cmd_ls"           # sure
+alias m=""                      # mv modify
 alias n=""
 
 alias o="___x_cmd_open"         # sure # open if it is a folder. Provide short name
@@ -25,7 +25,7 @@ alias u=""
 alias v=""
 alias w="who"
 
-alias x="___x_cmd_main"     # sure
+alias x="___x_cmd_main"         # sure
 alias y="yml"
 alias z=""
 
