@@ -8,8 +8,8 @@ alias g="___x_cmd_grep"          # rg   # git == git
 
 alias h="history"               # history
 alias i="info"
-alias j="json"                  # cd
-alias k="kubernete"             # sure
+alias j="x jq"                  # cd
+alias k="kubectl"               # sure
 alias l="___x_cmd_ls"           # sure
 alias m=""                      # mv modify
 alias n=""
